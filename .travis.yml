@@ -16,13 +16,13 @@ notifications:
     email: dev@anime-db.org
 
 install:
-  - composer self-update
-  - composer --version
-  - composer install --dev --prefer-dist
+    - curl -sS https://getcomposer.org/installer | php
+    - php composer.phar --version
+    - php composer.phar install --dev --prefer-dist
 
 script:
-  - phpunit --verbose --coverage-clover=coverage.clover
+    - phpunit --verbose --coverage-clover=coverage.clover
 
 after_script:
-  - wget https://scrutinizer-ci.com/ocular.phar
-  - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
+    - wget https://scrutinizer-ci.com/ocular.phar
+    - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
