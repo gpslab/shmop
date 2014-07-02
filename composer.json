@@ -1,0 +1,33 @@
+{
+    "name": "anime-db/shmop",
+    "license": "MIT",
+    "type": "library",
+    "description": "Shmop is a simple and small abstraction layer for shared memory manipulation using PHP",
+    "homepage": "http://github.com/anime-db/shmop",
+    "version": "0.1.0",
+    "authors": [
+        {
+            "name": "Anime DB",
+            "homepage": "http://anime-db.org"
+        },
+        {
+            "name": "Peter Gribanov",
+            "email": "info@peter-gribanov.ru"
+        },
+        {
+            "name": "Anime DB Community",
+            "homepage": "https://github.com/anime-db/shmop/graphs/contributors"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "AnimeDb\\Shmop\\": "lib/",
+            "AnimeDb\\Shmop\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=5.0",
+        "ext-shmop": "*"
+    },
+    "minimum-stability": "dev"
+}
