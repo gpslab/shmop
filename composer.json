@@ -28,5 +28,6 @@
     "require": {
         "php": ">=5.0",
         "ext-shmop": "*"
-    }
+    },
+    "minimum-stability": "dev"
 }
