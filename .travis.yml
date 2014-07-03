@@ -10,9 +10,9 @@ notifications:
     email: dev@anime-db.org
 
 install:
-    - curl -sS https://getcomposer.org/installer | php
-    - php composer.phar --version
-    - php composer.phar install --dev --prefer-dist
+    - composer self-update
+    - composer --version
+    - composer install --dev --prefer-dist
 
 script:
     - phpunit --verbose --coverage-clover=coverage.clover
