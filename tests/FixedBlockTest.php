@@ -45,7 +45,7 @@ class FixedBlockTest extends \PHPUnit_Framework_TestCase
     public function testReadAndWrite()
     {
         $sh = $this->getShmop();
-        $sh->write('foo');
+        $this->assertTrue($sh->write('foo'));
         $this->assertEquals('foo', $sh->read());
     }
 

@@ -67,10 +67,12 @@ class FixedBlock
      * Writes on a shared memory block
      *
      * @param string $data
+     *
+     * @return boolean
      */
     public function write($data)
     {
-        shmop_write($this->shmid, $data, 0);
+        return shmop_write($this->shmid, $data, 0) !== false;
     }
 
     /**
@@ -85,10 +87,12 @@ class FixedBlock
 
     /**
      * Mark a shared memory block for deletion
+     *
+     * @return boolean
      */
     public function delete()
     {
-        shmop_delete($this->shmid);
+        return shmop_delete($this->shmid);
     }
 
     /**
