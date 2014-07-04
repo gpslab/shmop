@@ -77,7 +77,7 @@ class FixedBlockTest extends \PHPUnit_Framework_TestCase
     {
         $sh = $this->getShmop();
         $sh->write('foo');
-        $sh->delete();
+        $this->assertTrue($sh->delete());
         unset($sh);
 
         // new object
