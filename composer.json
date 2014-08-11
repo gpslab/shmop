@@ -21,7 +21,11 @@
     ],
     "autoload": {
         "psr-4": {
-            "AnimeDb\\Shmop\\": "lib/",
+            "AnimeDb\\Shmop\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
             "AnimeDb\\Shmop\\Tests\\": "tests/"
         }
     },
