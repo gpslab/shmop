@@ -5,7 +5,7 @@
     "description": "Shmop is a simple and small abstraction layer for shared memory manipulation using PHP",
     "keywords": ["php", "shmop"],
     "homepage": "http://github.com/anime-db/shmop",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "authors": [
         {
             "name": "Anime DB",
