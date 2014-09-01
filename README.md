@@ -4,6 +4,7 @@
 [![Total Downloads](https://poser.pugx.org/anime-db/shmop/downloads.png)](https://packagist.org/packages/anime-db/shmop)
 [![License](https://poser.pugx.org/anime-db/shmop/license.png)](https://packagist.org/packages/anime-db/shmop)
 [![Code Coverage](https://scrutinizer-ci.com/g/anime-db/shmop/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/anime-db/shmop/?branch=master)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/bfd79f22-5633-4a83-8794-50580bc97f68/mini.png)](https://insight.sensiolabs.com/projects/bfd79f22-5633-4a83-8794-50580bc97f68)
 
 # Shmop
 
