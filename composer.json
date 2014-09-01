@@ -8,16 +8,8 @@
     "version": "1.0.2",
     "authors": [
         {
-            "name": "Anime DB",
-            "homepage": "http://anime-db.org"
-        },
-        {
             "name": "Peter Gribanov",
             "email": "info@peter-gribanov.ru"
-        },
-        {
-            "name": "Anime DB Community",
-            "homepage": "https://github.com/anime-db/shmop/graphs/contributors"
         }
     ],
     "autoload": {
