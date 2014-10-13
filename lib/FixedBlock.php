@@ -60,7 +60,7 @@ class FixedBlock
      */
     public function exists($id)
     {
-        return @shmop_open($id, 'a', 0, 0);
+        return (bool)@shmop_open($id, 'a', 0, 0);
     }
 
     /**
