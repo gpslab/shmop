@@ -1,7 +1,9 @@
 [![Latest Stable Version](https://poser.pugx.org/anime-db/shmop/v/stable.png)](https://packagist.org/packages/anime-db/shmop)
 [![Latest Unstable Version](https://poser.pugx.org/anime-db/shmop/v/unstable.png)](https://packagist.org/packages/anime-db/shmop)
+[![Total Downloads](https://poser.pugx.org/anime-db/shmop/downloads)](https://packagist.org/packages/anime-db/shmop)
 [![Build Status](https://travis-ci.org/anime-db/shmop.svg?branch=master)](https://travis-ci.org/anime-db/shmop)
 [![Code Coverage](https://scrutinizer-ci.com/g/anime-db/shmop/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/anime-db/shmop/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/anime-db/shmop/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/anime-db/shmop/?branch=master)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/62ad77e3-fb3b-42d7-93e7-2e3b296a5a8b/mini.png)](https://insight.sensiolabs.com/projects/62ad77e3-fb3b-42d7-93e7-2e3b296a5a8b)
 [![License](https://poser.pugx.org/anime-db/shmop/license.png)](https://packagist.org/packages/anime-db/shmop)
 
