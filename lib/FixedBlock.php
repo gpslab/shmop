@@ -92,6 +92,12 @@ class FixedBlock
      */
     public function delete()
     {
+        /**
+         * Bug fix
+         * @link https://bugs.php.net/bug.php?id=71921
+         */
+        shmop_write($this->shmid, str_pad('', shmop_size($this->shmid), ' '), 0);
+
         return shmop_delete($this->shmid);
     }
 
