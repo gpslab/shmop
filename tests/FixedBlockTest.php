@@ -28,12 +28,28 @@ class FixedBlockTest extends \PHPUnit_Framework_TestCase
     const SHMOP_ID = 0xFF;
 
     /**
-     * (non-PHPdoc)
-     * @see PHPUnit_Framework_TestCase::tearDown()
+     * @var string
      */
+    const WORD = 'foo';
+
+    /**
+     * @var FixedBlock
+     */
+    protected $fb;
+
+    protected function setUp()
+    {
+        $this->fb = new FixedBlock(self::SHMOP_ID, strlen(self::WORD));
+    }
+
     protected function tearDown()
     {
         if ($shmid = @shmop_open(self::SHMOP_ID, 'w', 0644, 0)) {
+            /**
+             * Fill memory block for fix bug
+             * @link https://bugs.php.net/bug.php?id=71921
+             */
+            shmop_write($shmid, str_pad('', strlen(self::WORD), ' '), 0);
             shmop_delete($shmid);
             shmop_close($shmid);
         }
@@ -44,9 +60,8 @@ class FixedBlockTest extends \PHPUnit_Framework_TestCase
      */
     public function testReadAndWrite()
     {
-        $sh = $this->getShmop();
-        $this->assertTrue($sh->write('foo'));
-        $this->assertEquals('foo', $sh->read());
+        $this->assertTrue($this->fb->write(self::WORD));
+        $this->assertEquals(self::WORD, $this->fb->read());
     }
 
     /**
@@ -54,7 +69,7 @@ class FixedBlockTest extends \PHPUnit_Framework_TestCase
      */
     public function testReadEmpty()
     {
-        $this->assertEmpty($this->getShmop()->read());
+        $this->assertEmpty($this->fb->read());
     }
 
     /**
@@ -62,12 +77,12 @@ class FixedBlockTest extends \PHPUnit_Framework_TestCase
      */
     public function testSync()
     {
-        $sh = $this->getShmop();
-        $sh->write('foo');
-        unset($sh);
+        $this->fb->write(self::WORD);
+        $this->fb = null;
 
         // new object
-        $this->assertEquals('foo', $this->getShmop()->read());
+        $fb = new FixedBlock(self::SHMOP_ID, 3);
+        $this->assertEquals(self::WORD, $fb->read());
     }
 
     /**
@@ -75,22 +90,12 @@ class FixedBlockTest extends \PHPUnit_Framework_TestCase
      */
     public function testDelete()
     {
-        $sh = $this->getShmop();
-        $sh->write('foo');
-        $this->assertTrue($sh->delete());
-        unset($sh);
+        $this->fb->write(self::WORD);
+        $this->assertTrue($this->fb->delete());
+        $this->fb = null;
 
         // new object
-        $this->assertEmpty($this->getShmop()->read());
-    }
-
-    /**
-     * Get shmop
-     *
-     * @return \AnimeDb\Shmop
-     */
-    protected function getShmop()
-    {
-        return new FixedBlock(self::SHMOP_ID, 3);
+        $fb = new FixedBlock(self::SHMOP_ID, 3);
+        $this->assertEmpty($fb->read());
     }
 }
