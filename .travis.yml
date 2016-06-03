@@ -12,7 +12,6 @@ notifications:
 
 install:
     - composer self-update
-    - composer --version
     - composer install --dev --prefer-dist
 
 script:
