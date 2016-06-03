@@ -5,6 +5,8 @@
 [![Code Coverage](https://scrutinizer-ci.com/g/anime-db/shmop/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/anime-db/shmop/?branch=master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/anime-db/shmop/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/anime-db/shmop/?branch=master)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/62ad77e3-fb3b-42d7-93e7-2e3b296a5a8b/mini.png)](https://insight.sensiolabs.com/projects/62ad77e3-fb3b-42d7-93e7-2e3b296a5a8b)
+[![StyleCI](https://styleci.io/repos/21424974/shield)](https://styleci.io/repos/21424974)
+[![Dependency Status](https://www.versioneye.com/user/projects/5746f69ace8d0e004505f4f5/badge.svg?style=flat)](https://www.versioneye.com/user/projects/5746f69ace8d0e004505f4f5)
 [![License](https://poser.pugx.org/anime-db/shmop/license.png)](https://packagist.org/packages/anime-db/shmop)
 
 # Shmop
