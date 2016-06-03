@@ -6,7 +6,6 @@
  * @copyright Copyright (c) 2014, Peter Gribanov
  * @license   http://opensource.org/licenses/MIT
  */
-
 namespace AnimeDb\Shmop;
 
 class FixedBlock
@@ -53,7 +52,7 @@ class FixedBlock
      */
     public function exists($id)
     {
-        return (bool)@shmop_open($id, 'a', 0, 0);
+        return (bool) @shmop_open($id, 'a', 0, 0);
     }
 
     /**
@@ -85,7 +84,7 @@ class FixedBlock
      */
     public function delete()
     {
-        /**
+        /*
          * Bug fix
          * @link https://bugs.php.net/bug.php?id=71921
          */

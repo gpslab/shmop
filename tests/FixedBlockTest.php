@@ -6,7 +6,6 @@
  * @copyright Copyright (c) 2014, Peter Gribanov
  * @license   http://opensource.org/licenses/MIT
  */
-
 namespace AnimeDb\Shmop\Tests;
 
 use AnimeDb\Shmop\FixedBlock;
@@ -36,7 +35,7 @@ class FixedBlockTest extends \PHPUnit_Framework_TestCase
     protected function tearDown()
     {
         if ($shmid = @shmop_open(self::SHMOP_ID, 'w', 0644, 0)) {
-            /**
+            /*
              * Fill memory block for fix bug
              * @link https://bugs.php.net/bug.php?id=71921
              */
