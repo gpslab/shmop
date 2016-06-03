@@ -15,10 +15,10 @@ Shmop is a simple and small abstraction layer for shared memory manipulation usi
 
 ## Installation
 
-Add the following to the `require` section of your composer.json file:
+Pretty simple with [Composer](http://packagist.org), run:
 
-```
-"anime-db/shmop": ">=1.0"
+```sh
+composer require anime-db/shmop
 ```
 
 ## Usage
