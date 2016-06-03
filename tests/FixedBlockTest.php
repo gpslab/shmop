@@ -1,8 +1,7 @@
 <?php
 /**
- * Shmop package
+ * Shmop package.
  *
- * @package   AnimeDb
  * @author    Peter Gribanov <info@peter-gribanov.ru>
  * @copyright Copyright (c) 2014, Peter Gribanov
  * @license   http://opensource.org/licenses/MIT
@@ -12,18 +11,10 @@ namespace AnimeDb\Shmop\Tests;
 
 use AnimeDb\Shmop\FixedBlock;
 
-/**
- * Test shmop block fixed size
- *
- * @package AnimeDb\Shmop\Tests
- * @author  Peter Gribanov <info@peter-gribanov.ru>
- */
 class FixedBlockTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * Shmop id
-     *
-     * @var integer
+     * @var int
      */
     const SHMOP_ID = 0xFF;
 
@@ -55,26 +46,17 @@ class FixedBlockTest extends \PHPUnit_Framework_TestCase
         }
     }
 
-    /**
-     * Test read and write
-     */
     public function testReadAndWrite()
     {
         $this->assertTrue($this->fb->write(self::WORD));
         $this->assertEquals(self::WORD, $this->fb->read());
     }
 
-    /**
-     * Test read empty data
-     */
     public function testReadEmpty()
     {
         $this->assertEmpty($this->fb->read());
     }
 
-    /**
-     * Test sync data
-     */
     public function testSync()
     {
         $this->fb->write(self::WORD);
@@ -85,9 +67,6 @@ class FixedBlockTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(self::WORD, $fb->read());
     }
 
-    /**
-     * Test delete data
-     */
     public function testDelete()
     {
         $this->fb->write(self::WORD);

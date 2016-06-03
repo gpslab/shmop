@@ -1,8 +1,7 @@
 <?php
 /**
- * Shmop package
+ * Shmop package.
  *
- * @package   AnimeDb
  * @author    Peter Gribanov <info@peter-gribanov.ru>
  * @copyright Copyright (c) 2014, Peter Gribanov
  * @license   http://opensource.org/licenses/MIT
@@ -10,37 +9,31 @@
 
 namespace AnimeDb\Shmop;
 
-/**
- * Shmop block fixed size
- *
- * @package AnimeDb\Shmop
- * @author  Peter Gribanov <info@peter-gribanov.ru>
- */
 class FixedBlock
 {
     /**
-     * Default permission (octal) that will be used in created memory blocks
+     * Default permission (octal) that will be used in created memory blocks.
      *
-     * @var integer
+     * @var int
      */
     const DEFAULT_PERMISSION = 0644;
 
     /**
-     * Shared memory block id returned by shmop_open
+     * Shared memory block id returned by shmop_open.
      *
-     * @var integer
+     * @var int
      */
     protected $shmid;
 
     /**
-     * Shared memory block instantiation
+     * Shared memory block instantiation.
      *
      * In the constructor we'll check if the block we're going to manipulate
      * already exists or needs to be created. If it exists, let's open it.
      *
      * @param string $id
-     * @param integer $size
-     * @param integer $perms
+     * @param int $size
+     * @param int $perms
      */
     public function __construct($id, $size, $perms = self::DEFAULT_PERMISSION)
     {
@@ -52,11 +45,11 @@ class FixedBlock
     }
 
     /**
-     * Checks if a shared memory block with the provided id exists or not
+     * Checks if a shared memory block with the provided id exists or not.
      *
      * @param string $id
      *
-     * @return boolean
+     * @return bool
      */
     public function exists($id)
     {
@@ -64,11 +57,11 @@ class FixedBlock
     }
 
     /**
-     * Writes on a shared memory block
+     * Writes on a shared memory block.
      *
      * @param string $data
      *
-     * @return boolean
+     * @return bool
      */
     public function write($data)
     {
@@ -76,7 +69,7 @@ class FixedBlock
     }
 
     /**
-     * Reads from a shared memory block
+     * Reads from a shared memory block.
      *
      * @return string
      */
@@ -86,9 +79,9 @@ class FixedBlock
     }
 
     /**
-     * Mark a shared memory block for deletion
+     * Mark a shared memory block for deletion.
      *
-     * @return boolean
+     * @return bool
      */
     public function delete()
     {
@@ -102,7 +95,7 @@ class FixedBlock
     }
 
     /**
-     * Closes the shared memory block and stops manipulation
+     * Closes the shared memory block and stops manipulation.
      */
     public function __destruct()
     {
