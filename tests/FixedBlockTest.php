@@ -6,6 +6,7 @@
  * @copyright Copyright (c) 2014, Peter Gribanov
  * @license   http://opensource.org/licenses/MIT
  */
+
 namespace AnimeDb\Shmop\Tests;
 
 use AnimeDb\Shmop\FixedBlock;
