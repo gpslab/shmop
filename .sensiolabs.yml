@@ -1,5 +1,3 @@
 rules:
     php.silenced_error:
-        enabled: true
-        function_whitelist:
-            shmop_open
+        enabled: false
