@@ -24,5 +24,8 @@
     "require": {
         "php": ">=5.0",
         "ext-shmop": "*"
+    },
+    "require-dev" : {
+        "phpunit/phpunit": "4.8.*"
     }
 }
