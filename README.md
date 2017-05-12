@@ -26,9 +26,12 @@ composer require anime-db/shmop
 Creating new block
 
 ```php
-use GpsLab\Component\Shmop\FixedBlock;
+use GpsLab\Component\Shmop\Block;
 
-$sh = new FixedBlock(0xFF /* id for memory block */, 3 /* memory block size */);
+$sh = new Block(
+    0xFF, // id for memory block
+    3 // memory block size
+);
 $sh->write('foo');
 echo $sh->read(); // print 'foo'
 $sh->delete();
@@ -37,9 +40,9 @@ $sh->delete();
 Reading an existing block
 
 ```php
-use GpsLab\Component\Shmop\FixedBlock;
+use GpsLab\Component\Shmop\Block;
 
-$sh = new FixedBlock(0xFF, 3);
+$sh = new Block(0xFF, 3);
 // print contents of memory block. if block is not exists prints a blank line
 echo $sh->read();
 ```

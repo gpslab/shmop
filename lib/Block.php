@@ -9,7 +9,7 @@
 
 namespace GpsLab\Component\Shmop;
 
-class FixedBlock
+class Block
 {
     /**
      * Default permission (octal) that will be used in created memory blocks.

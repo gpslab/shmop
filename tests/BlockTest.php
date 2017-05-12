@@ -9,9 +9,9 @@
 
 namespace GpsLab\Component\Shmop\Tests;
 
-use GpsLab\Component\Shmop\FixedBlock;
+use GpsLab\Component\Shmop\Block;
 
-class FixedBlockTest extends \PHPUnit_Framework_TestCase
+class BlockTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @var int
@@ -24,13 +24,13 @@ class FixedBlockTest extends \PHPUnit_Framework_TestCase
     const WORD = 'foo';
 
     /**
-     * @var FixedBlock
+     * @var Block
      */
     protected $fb;
 
     protected function setUp()
     {
-        $this->fb = new FixedBlock(self::SHMOP_ID, strlen(self::WORD));
+        $this->fb = new Block(self::SHMOP_ID, strlen(self::WORD));
     }
 
     protected function tearDown()
@@ -63,7 +63,7 @@ class FixedBlockTest extends \PHPUnit_Framework_TestCase
         $this->fb = null;
 
         // new object
-        $fb = new FixedBlock(self::SHMOP_ID, 3);
+        $fb = new Block(self::SHMOP_ID, 3);
         $this->assertEquals(self::WORD, $fb->read());
     }
 
@@ -74,7 +74,7 @@ class FixedBlockTest extends \PHPUnit_Framework_TestCase
         $this->fb = null;
 
         // new object
-        $fb = new FixedBlock(self::SHMOP_ID, 3);
+        $fb = new Block(self::SHMOP_ID, 3);
         $this->assertEmpty($fb->read());
     }
 }
