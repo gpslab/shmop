@@ -9,7 +9,9 @@
 
 # Shmop
 
-Shmop is a simple and small abstraction layer for shared memory manipulation using PHP
+Shmop is a simple and small abstraction layer for shared memory manipulation using PHP.
+
+![Shared memory](shared_memory.gif)
 
 ## Installation
 
