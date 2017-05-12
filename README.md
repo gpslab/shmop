@@ -37,6 +37,8 @@ echo $sh->read(); // print 'foo'
 $sh->delete();
 ```
 
+Memory block must be a fixed size for correct reading from it.
+
 Reading an existing block
 
 ```php
