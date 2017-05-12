@@ -1,2 +1,5 @@
-php.silenced_error:
-    enabled: false
+rules:
+    php.silenced_error:
+        enabled: true
+        function_whitelist:
+            shmop_open
