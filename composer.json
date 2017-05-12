@@ -1,10 +1,10 @@
 {
-    "name": "anime-db/shmop",
+    "name": "gpslab/shmop",
     "license": "MIT",
     "type": "library",
     "description": "Shmop is a simple and small abstraction layer for shared memory manipulation using PHP",
     "keywords": ["php", "shmop"],
-    "homepage": "http://github.com/anime-db/shmop",
+    "homepage": "http://github.com/gpslab/shmop",
     "authors": [
         {
             "name": "Peter Gribanov",

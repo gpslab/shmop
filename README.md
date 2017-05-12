@@ -1,13 +1,13 @@
-[![Latest Stable Version](https://poser.pugx.org/anime-db/shmop/v/stable.png)](https://packagist.org/packages/anime-db/shmop)
-[![Latest Unstable Version](https://poser.pugx.org/anime-db/shmop/v/unstable.png)](https://packagist.org/packages/anime-db/shmop)
-[![Total Downloads](https://poser.pugx.org/anime-db/shmop/downloads)](https://packagist.org/packages/anime-db/shmop)
-[![Build Status](https://travis-ci.org/anime-db/shmop.svg?branch=master)](https://travis-ci.org/anime-db/shmop)
-[![Code Coverage](https://scrutinizer-ci.com/g/anime-db/shmop/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/anime-db/shmop/?branch=master)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/anime-db/shmop/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/anime-db/shmop/?branch=master)
+[![Latest Stable Version](https://poser.pugx.org/gpslab/shmop/v/stable.png)](https://packagist.org/packages/gpslab/shmop)
+[![Latest Unstable Version](https://poser.pugx.org/gpslab/shmop/v/unstable.png)](https://packagist.org/packages/gpslab/shmop)
+[![Total Downloads](https://poser.pugx.org/gpslab/shmop/downloads)](https://packagist.org/packages/gpslab/shmop)
+[![Build Status](https://travis-ci.org/gpslab/shmop.svg?branch=master)](https://travis-ci.org/gpslab/shmop)
+[![Code Coverage](https://scrutinizer-ci.com/g/gpslab/shmop/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/gpslab/shmop/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/gpslab/shmop/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/gpslab/shmop/?branch=master)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/62ad77e3-fb3b-42d7-93e7-2e3b296a5a8b/mini.png)](https://insight.sensiolabs.com/projects/62ad77e3-fb3b-42d7-93e7-2e3b296a5a8b)
 [![StyleCI](https://styleci.io/repos/21424974/shield)](https://styleci.io/repos/21424974)
 [![Dependency Status](https://www.versioneye.com/user/projects/5746f69ace8d0e004505f4f5/badge.svg?style=flat)](https://www.versioneye.com/user/projects/5746f69ace8d0e004505f4f5)
-[![License](https://poser.pugx.org/anime-db/shmop/license.png)](https://packagist.org/packages/anime-db/shmop)
+[![License](https://poser.pugx.org/gpslab/shmop/license.png)](https://packagist.org/packages/gpslab/shmop)
 
 # Shmop
 
@@ -18,7 +18,7 @@ Shmop is a simple and small abstraction layer for shared memory manipulation usi
 Pretty simple with [Composer](http://packagist.org), run:
 
 ```sh
-composer require anime-db/shmop
+composer require gpslab/shmop
 ```
 
 ## Usage
