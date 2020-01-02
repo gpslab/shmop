@@ -10,8 +10,9 @@
 namespace GpsLab\Component\Shmop\Tests;
 
 use GpsLab\Component\Shmop\Block;
+use PHPUnit\Framework\TestCase;
 
-class BlockTest extends \PHPUnit_Framework_TestCase
+class BlockTest extends TestCase
 {
     /**
      * @var int
