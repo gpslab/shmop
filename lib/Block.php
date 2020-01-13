@@ -65,7 +65,7 @@ class Block
      */
     public function write($data)
     {
-        return shmop_write($this->shmid, $data, 0) !== false;
+        return false !== shmop_write($this->shmid, $data, 0);
     }
 
     /**
